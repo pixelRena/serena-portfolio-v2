@@ -17,7 +17,7 @@ body {
 .circle-wave::after {
   content: '';
   position:absolute;
-  top: -5%;
+  top: -10%;
   left: 50%;
   width: 150%;
   height: 150%;
@@ -35,7 +35,7 @@ body {
   height: 150%;
   border-radius: 40%;
   background-color: rgb(131, 207, 255);
-  animation: flow-inverse 8s linear infinite;
+  animation: flow-inverse 7s linear infinite;
 }
 
 @keyframes flow {
