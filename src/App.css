@@ -9,3 +9,49 @@ body {
 .App {
   text-align: center;
 }
+
+.main-bg {
+  z-index: -3000;
+}
+
+.circle-wave::after {
+  content: '';
+  position:absolute;
+  top: -5%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  border-radius: 40%;
+  background-color: rgb(237, 237, 237);
+  animation: flow 8s linear infinite;
+}
+
+.circle-wave::before {
+  content: '';
+  position:absolute;
+  top: -5%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  border-radius: 40%;
+  background-color: rgb(131, 207, 255);
+  animation: flow-inverse 8s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    transform: translate(-50%,-65%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%,-65%) rotate(360deg);
+  }
+}
+
+@keyframes flow-inverse {
+  0% {
+    transform: translate(-50%,-60%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%,-60%) rotate(360deg);
+  }
+}

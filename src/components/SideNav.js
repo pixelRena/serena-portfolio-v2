@@ -3,7 +3,7 @@ import FeatherIcon from 'feather-icons-react';
 export default function SideNav() {
     return(
         <>
-        <div className="side-nav absolute text-2xl text-left left-7 top-96 text-white">
+        <div className="side-nav absolute text-sm  md:text-2xl lg:text-2xl text-left left-7 top-96 text-white">
             <ul>
                 <li className="cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Home
                 </li>

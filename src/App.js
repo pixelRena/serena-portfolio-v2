@@ -6,10 +6,11 @@ import TopNav from './components/TopNav';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App min-h-screen">
         <MainBackground/>
         <SideNav/>
         <TopNav/>
+        <Home/>
     </div>
   );
 }
