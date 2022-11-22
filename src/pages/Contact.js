@@ -18,8 +18,11 @@ export default function Contact() {
 	};
 
 	return(
+		<>
+		<div className="absolute m-auto top-0 left-0 right-0 w-11/12 lg:w-10/12 h-[150vh] bg-black bg-opacity-40 lg:h-screen" style={{zIndex: "-300"}}>
+		</div>
 		<div className="m-auto w-11/12 h-[62rem] lg:h-screen lg:w-10/12">
-		<div className="text-white mt-32 h-[34rem] grid lg:grid-cols-2 lg:mt-0 lg:h-screen lg:p-32 lg:gap-2 lg:content-center bg-black bg-opacity-40">	
+		<div className="text-white mt-24 h-[34rem] grid lg:grid-cols-2 lg:mt-0 lg:h-screen lg:p-32 lg:gap-2 lg:content-center">	
 			<div className="text-left p-8">
 				<h1 className="text-4xl lg:text-6xl font-bold">Let's <span className="text-sky-500">Connect:</span></h1>
 				<div className="mt-5">
@@ -54,5 +57,6 @@ export default function Contact() {
 			</div>
 		</div>
 		</div>
+		</>
 	);
 };

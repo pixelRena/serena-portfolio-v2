@@ -10,9 +10,9 @@ export default function MainBackground() {
     },[path]);
 
     return(
-        <div className="main-bg absolute bg-zinc-900 m-auto left-0 right-0 w-11/12 lg:w-10/12 h-screen">
+        <div className="main-bg absolute bg-zinc-900 m-auto left-0 right-0 h-[62rem] w-11/12 lg:w-10/12 lg:h-screen">
             {/* If pathname is not home, display static viedo */}
-            <video className="bg-repeat opacity-50 object-cover w-full h-screen overflow-hidden" src={path.pathname === '/' ? `https://assets.mixkit.co/videos/preview/mixkit-triangular-tunnel-with-blue-lights-in-its-walls-34317-large.mp4` : `/images/video1.mp4`} autoPlay muted playsInline loop/>
+            <video className="object-center opacity-50 object-cover w-full h-screen overflow-hidden" src={path.pathname === '/' ? `https://assets.mixkit.co/videos/preview/mixkit-triangular-tunnel-with-blue-lights-in-its-walls-34317-large.mp4` : `/images/video1.mp4`} autoPlay muted playsInline loop/>
         </div>
     )
 };
