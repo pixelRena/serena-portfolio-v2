@@ -19,14 +19,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
         </Routes>
-        {/* Change large devices width to reasonable height */}
-        <div className="m-auto w-11/12 h-[62rem] bg-zinc-900 lg:h-[84rem] lg:w-10/12">
           <Routes>
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/creations" element={<Work/>}/>
           </Routes>
-        </div>
         <Footer/>
     </div>
     </BrowserRouter>

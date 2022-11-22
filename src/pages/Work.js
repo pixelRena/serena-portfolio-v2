@@ -1,36 +1,29 @@
 export default function Work() {
 	return(
-		// change height
-		<>
-		<div className="text-white mt-32 h-[32rem] grid lg:grid-cols-8 lg:mt-0 lg:h-screen lg:p-10 lg:gap-3 lg:content-center">
-			<h1 className="text-3xl text-center font-bold col-span-8 mt-48 mb-10">Discover My Work</h1>
-			{/* First row */}
-			<div className="pr-10 pt-10 col-start-1 col-end-4 text-xl">
-				<h1 className="text-left text-3xl font-semibold mb-5">Project Name 1<span className="text-gray-500 text-xl italic">/4</span></h1>
-				<p className="text-xl text-left ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
-				</p>
+		// change height for mobile
+		// create popup for each project
+		<div className="m-auto w-11/12 h-[62rem] lg:h-screen lg:w-10/12">
+			<div className="text-white flex flex-wrap h-screen justify-center items-center gap-5 bg-black bg-opacity-40 lg:gap-20">
+				<div>
+					<div className="relative mb-5 bg-neutral-900 p-20 bg-cover bg-no-repeat bg-center border-4 overflow-hidden rounded-md shadow-lg shadow-black lg:p-40 lg:border-8" style={{backgroundImage: "url('https://res.cloudinary.com/dyqefy6t8/image/upload/v1665823921/ubsizpsqpqkyymxa23r6.jpg')"}}>
+						<div className="absolute text-xl font-bold top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-red-800 drop-shadow-lg hover:bg-opacity-40 hover:text-red-500 ease-in duration-300 p-40 lg:text-4xl">EXPERTECE</div>
+					</div>
+					<div className="relative bg-neutral-900 p-20 bg-cover bg-no-repeat bg-center overflow-hidden border-4 rounded-md shadow-lg shadow-black lg:p-40 lg:border-8" style={{backgroundImage: "url('images/aiBrain.jpg')"}}>
+						<div className="absolute text-xl font-bold top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-black drop-shadow-lg hover:bg-opacity-40 hover:text-sky-300 ease-in duration-300 p-40 lg:text-4xl">FACE ANALYZER</div>
+					</div>
+				</div>
+
+				<div>
+					<div className="relative mb-5 bg-neutral-900 p-20 bg-cover bg-scroll bg-no-repeat overflow-hidden bg-center border-4 rounded-md shadow-lg shadow-black lg:p-40 lg:border-8" style={{backgroundImage: "url('https://rtf-prototype.onrender.com/logo.png')"}}>
+						<div className="absolute text-xl font-bold drop-shadow-lg top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:text-orange-500 hover:bg-black hover:bg-opacity-40 ease-in duration-300 p-40 lg:text-4xl">REDEMPTION TEMPLE FITNESS</div>
+					</div>
+					<div className="relative bg-neutral-900 p-20 bg-cover bg-no-repeat bg-center overflow-hidden border-4 rounded-md shadow-lg shadow-black lg:p-40 lg:border-8" style={{backgroundImage: "url('images/beachcover.png')"}}>
+						<video className="absolute object-cover h-96 bottom-0 left-0 hover:bg-black hover:bg-opacity-40 ease-in duration-300" src="https://assets.mixkit.co/videos/preview/mixkit-top-aerial-shot-of-seashore-with-rocks-1090-large.mp4" onMouseOver={(e) => e.target.play()} onMouseOut={(e) =>e.target.pause()} ></video>
+						
+						<div className="absolute drop-shadow-lg text-xl font-bold top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:text-4xl">TRAVEL DREAMS</div>
+					</div>
+				</div>
 			</div>
-			<div className="col-start-4 col-end-5 w-[48rem] h-96 bg-cover" style={{backgroundImage: "url('/images/project3.png')"}}>
-			</div>
-
-			{/*<div className="col-start-6 bg-pink-500 rounded-none w-48 h-72">
-			</div>*/}
-
-
-			{/* Second Row*/}
-	{/*		<div className="mt-20 col-start-1 col-end-3 bg-gray-500 rounded-none w-96 h-72">
-			</div>
-			<div className="mt-20 col-start-3 bg-pink-500 rounded-none w-48 h-72">
-			</div>
-			<div className="mt-20 pr-10 pt-10 col-start-4 col-end-7 text-xl">
-				<h1 className="text-right text-3xl font-semibold mb-5">Project Name 2<span className="text-gray-500 text-xl italic">/4</span></h1>
-				<p className="text-xl text-right ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
-				</p>
-			</div>*/}
-
-			{/* Process repeat */}
-
 		</div>
-		</>
 	);
 };

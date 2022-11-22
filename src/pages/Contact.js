@@ -18,9 +18,10 @@ export default function Contact() {
 	};
 
 	return(
-		<div className="text-white mt-32 h-[34rem] grid lg:grid-cols-2 lg:mt-0 lg:h-screen lg:p-32 lg:gap-2 lg:content-center">	
+		<div className="m-auto w-11/12 h-[62rem] lg:h-screen lg:w-10/12">
+		<div className="text-white mt-32 h-[34rem] grid lg:grid-cols-2 lg:mt-0 lg:h-screen lg:p-32 lg:gap-2 lg:content-center bg-black bg-opacity-40">	
 			<div className="text-left p-8">
-				<h1 className="text-4xl lg:text-6xl font-bold">Let's Connect:</h1>
+				<h1 className="text-4xl lg:text-6xl font-bold">Let's <span className="text-sky-500">Connect:</span></h1>
 				<div className="mt-5">
 					<FeatherIcon className="mr-5 cursor-pointer inline w-10" strokeWidth="1" size="40" icon="linkedin" onClick={() => window.open("https://www.linkedin.com/in/sdean00/","_target")}/>
 					<FeatherIcon className="mr-5 cursor-pointer text-sky-500 inline w-10" strokeWidth="1" size="40" icon="twitter" onClick={() => window.open("https://twitter.com/pixelRena","_target")}/>
@@ -34,7 +35,7 @@ export default function Contact() {
 				</div>
 			</div>
 			<div className="mt-8 lg:mt-0 p-5">
-				<h1 className="text-4xl mb-2 font-bold lg:text-5xl">Write To Me:</h1>
+				<h1 className="text-4xl mb-2 font-bold lg:text-5xl"><span className="text-sky-500">Write</span> To Me:</h1>
 				<form onSubmit={sendEmail}>
 					<div>
 						<label htmlFor="name">Your Name</label>
@@ -46,11 +47,12 @@ export default function Contact() {
 					</div>
 					<div className="mt-5">
 						<label htmlFor="message">Message</label>
-						<textarea id="message" className="resize-none m-auto mt-2 w-64 h-32 block border-2 border-gray-400 bg-transparent focus:border-white focus:ring-0 lg:w-96" type="text" onChange={e => setMessage(e.target.value)}/>
+						<textarea id="message" className="resize-none rounded-md m-auto mt-2 w-64 h-32 block border-2 border-gray-400 bg-transparent focus:border-white focus:ring-0 lg:w-96" type="text" onChange={e => setMessage(e.target.value)}/>
 					</div>
 					<button type="submit" className="border-2 border-gray-400 w-56 rounded-lg font-semibold p-2 hover:bg-white hover:text-black text-sm mt-5 lg:w-96 lg:p-3 lg:text-lg">Send</button>
 				</form>
 			</div>
+		</div>
 		</div>
 	);
 };
