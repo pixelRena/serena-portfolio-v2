@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+// Side bar needs to be fixed for smaller desktop screens
 export default function SideNav() {
     return(
         <>
