@@ -15,8 +15,8 @@ export default function About() {
 				<p className="text-sm p-5 text-center tracking-tight lg:text-xl lg:mt-7 lg:tracking-wide">Hola! I'm a Freelancing Web Developer wanting to transfer over to Front-End Developement. From a 3D artist to creating codes and bringing them to life in web development, I enjoy every aspect of designing websites including user-friendliness, attractiveness, and simplicity. Want to connect, get a quote or have coffee together and chat? Feel free to contact me, my inbox is open to all and I'll get back with you as soon as possible.
 				</p>
 				<div className="flex flex-col justify-center items-center lg:flex-row">
-					<Link to="/contact"><button className="mr-2 border-2 border-white rounded-lg font-semibold p-2 hover:bg-white hover:text-black text-sm mt-2 lg:mt-0 lg:inline lg:p-3 lg:text-lg">Get in touch</button></Link>
-					<Link to="/creations"><button className="mr-2 border-2 border-white rounded-lg font-semibold p-2 hover:bg-white hover:text-black text-sm mt-2 lg:mt-0 lg:inline lg:p-3 lg:text-lg">Discover my work</button></Link>
+					<Link to="/contact"><button className="mr-2 border-2 border-white rounded-lg font-semibold p-2 hover:bg-white hover:bg-opacity-30 text-sm mt-2 lg:mt-0 lg:inline lg:p-3 lg:text-lg">Get in touch</button></Link>
+					<Link to="/creations"><button className="mr-2 border-2 border-white rounded-lg font-semibold p-2 hover:bg-white hover:bg-opacity-30 text-sm mt-2 lg:mt-0 lg:inline lg:p-3 lg:text-lg">Discover my work</button></Link>
 				</div>
 			</div>
 		</div>

@@ -42,17 +42,17 @@ export default function Contact() {
 				<form onSubmit={sendEmail}>
 					<div>
 						<label htmlFor="name">Your Name</label>
-						<input id="name" className="m-auto mb-2 w-64 block border-0 border-b-2 border-gray-400 bg-transparent focus:border-white focus:ring-0 lg:w-96" type="text" onChange={e => setName(e.target.value)}/>
+						<input id="name" className="m-auto mb-2 w-64 block border-0 border-b-2 border-gray-400 bg-transparent focus:border-sky-500  focus:ring-0 lg:w-96" type="text" onChange={e => setName(e.target.value)}/>
 					</div>
 					<div>
 						<label htmlFor="companyname">Company Name</label>
-						<input id="companyname" className="m-auto w-64 block border-0 border-b-2 border-gray-400 bg-transparent focus:border-white focus:ring-0 lg:w-96" type="text" onChange={e => setCompany(e.target.value)}/>
+						<input id="companyname" className="m-auto w-64 block border-0 border-b-2 border-gray-400 bg-transparent focus:border-sky-500 focus:ring-0 lg:w-96" type="text" onChange={e => setCompany(e.target.value)}/>
 					</div>
 					<div className="mt-5">
 						<label htmlFor="message">Message</label>
-						<textarea id="message" className="resize-none rounded-md m-auto mt-2 w-64 h-32 block border-2 border-gray-400 bg-transparent focus:border-white focus:ring-0 lg:w-96" type="text" onChange={e => setMessage(e.target.value)}/>
+						<textarea id="message" className="resize-none rounded-md m-auto mt-2 w-64 h-32 block border-2 border-gray-400 bg-transparent focus:border-sky-500  focus:ring-0 lg:w-96" type="text" onChange={e => setMessage(e.target.value)}/>
 					</div>
-					<button type="submit" className="border-2 border-gray-400 w-56 rounded-lg font-semibold p-2 hover:bg-white hover:text-black text-sm mt-5 lg:w-96 lg:p-3 lg:text-lg">Send</button>
+					<button type="submit" className="border-2 border-gray-400 w-56 rounded-lg font-semibold p-2 hover:bg-white hover:bg-opacity-30 text-sm mt-5 lg:w-96 lg:p-3 lg:text-lg">Send</button>
 				</form>
 			</div>
 		</div>
