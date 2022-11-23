@@ -19,7 +19,7 @@ export default function Work() {
 		<AiModal showAi={showAi} setShowAi={setShowAi}/>
 		<TravelModal showTravel={showTravel} setShowTravel={setShowTravel}/>
 
-		<div className="absolute m-auto top-0 left-0 right-0 w-11/12 lg:w-10/12 h-[150vh] bg-black bg-opacity-40 lg:h-screen" style={{zIndex: "-300"}}>
+		<div className="absolute m-auto top-0 left-0 right-0 w-11/12 lg:w-10/12 bg-black bg-opacity-40 lg:h-screen" style={{zIndex: "-300"}}>
 		</div>
 
 		<div className="m-auto mt-32 w-11/12 h-[62rem] lg:h-screen lg:w-10/12 lg:mt-0">

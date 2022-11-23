@@ -1,26 +1,44 @@
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
-// Side bar needs to be fixed for smaller desktop screens
 export default function SideNav() {
+    const [ active, setActive ] = useState(false);
+
     return(
         <>
-        {/* desktop */}
-        <div className="side-nav hidden lg:block absolute text-2xl text-left left-7 top-96 text-white bg-[#0E0E0E]">
-            <ul>
-                <NavLink to="/"><li className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Home
-                </li></NavLink>
-                <NavLink to="/about"><li className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">About</li></NavLink>
-                <NavLink to="/creations"><li className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Work</li></NavLink>
-                <NavLink to="/contact"><li className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Contact</li></NavLink>
-            </ul>
-        </div>
-        {/* mobile - convert to top nav*/}
-        <div className="text-white mt-3 flex justify-around lg:hidden">
-            <NavLink to="/"><ul className="cursor-pointer mt-2 hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Home</ul></NavLink>
-            <NavLink to="/about"><ul className="cursor-pointer mt-2 hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">About</ul></NavLink>
-            <NavLink to="/creations"><ul className="cursor-pointer mt-2 hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Work</ul></NavLink>
-            <NavLink to="/contact"><ul className="cursor-pointer mt-2 hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Contact</ul></NavLink>
-        </div>
+        <div className=" flex">  
+            <aside className="absolute w-48 overflow-hidden z-50">
+                <button className={`mt-5 lg:hidden ${active ? 'absolute active' : 'inactive mr-16'}`} id="navbar-toggler" onClick={() => setActive(!active)} type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div className={`h-screen lg:flex top-0 text-left text-2xl items-center justify-center text-white flex bg-[#0E0E0E] ${active ? '':'hidden'}`}>
+                    <ul className="space-y-2">
+                        <li>
+                            <NavLink to="/" className="flex items-center" onClick={() => setActive(false)}>
+                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Home</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/about" className="flex items-center" onClick={() => setActive(false)}>
+                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">About</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/creations" className="flex items-center" onClick={() => setActive(false)}>
+                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">My Work</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact" className="flex items-center" onClick={() => setActive(false)}>
+                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Contact</span>
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div> 
         </>
     );
 };
