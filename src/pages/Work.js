@@ -22,8 +22,8 @@ export default function Work() {
 		<div className="absolute m-auto top-0 left-0 right-0 w-11/12 lg:w-10/12 bg-black bg-opacity-40 lg:h-screen" style={{zIndex: "-300"}}>
 		</div>
 
-		<div className="fade m-auto mt-32 w-11/12 h-[62rem] lg:h-screen lg:w-10/12 lg:mt-0">
-			<div className="text-white flex flex-wrap h-screen justify-center items-center gap-5 lg:gap-20">
+		<div className="fade m-auto w-11/12 h-[62rem] lg:h-screen lg:w-10/12">
+			<div className="mt-24 lg:mt-0 text-white flex flex-wrap h-screen justify-center items-center gap-5 lg:gap-20">
 				<div>
 					<div className="relative mb-5 bg-neutral-900 p-20 bg-cover bg-no-repeat bg-center border-4 overflow-hidden rounded-md shadow-lg shadow-black lg:p-40 lg:border-8" style={{backgroundImage: "url('https://res.cloudinary.com/dyqefy6t8/image/upload/v1665823921/ubsizpsqpqkyymxa23r6.jpg')"}}>
 						<div className="absolute text-xl font-bold top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-red-800 drop-shadow-lg hover:bg-opacity-40 hover:text-red-500 ease-in duration-300 p-40 lg:text-4xl">EXPERTECE

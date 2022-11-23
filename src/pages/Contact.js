@@ -26,8 +26,8 @@ export default function Contact() {
 		<div className="absolute m-auto top-0 left-0 right-0 w-11/12 lg:w-10/12 bg-black bg-opacity-40 lg:h-screen" style={{zIndex: "-300"}}>
 		</div>
 		<div className="fade m-auto w-11/12 h-[62rem] lg:h-screen lg:w-10/12">
-		<div className="text-white mt-24 h-[34rem] grid lg:grid-cols-2 lg:mt-0 lg:h-screen lg:p-32 lg:gap-2 lg:content-center">	
-			<div className="text-left p-8">
+		<div className="text-white h-[34rem] grid lg:grid-cols-2 lg:h-screen lg:p-32 lg:gap-2 lg:content-center">	
+			<div className="mt-24 lg:mt-0 text-left p-8">
 				<h1 className="text-4xl lg:text-6xl font-bold">Let's <span className="text-sky-500">Connect:</span></h1>
 				<div className="mt-5">
 					<FeatherIcon className="mr-5 cursor-pointer inline w-10" strokeWidth="1" size="40" icon="linkedin" onClick={() => window.open("https://www.linkedin.com/in/sdean00/","_target")}/>
