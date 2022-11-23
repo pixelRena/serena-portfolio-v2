@@ -2,6 +2,7 @@
 
 - [Overview](#overview)
 - [Built With](#built-with)
+- [Acknowledgements](#acknowledgements)
 
 ## Overview
 LIVE DEMO: https://serenadean.herokuapp.com/
@@ -14,4 +15,8 @@ This application built with only react, tailwind and css was spent carefully. Th
 ### Built With
 - [React](https://reactjs.org/)
 - [Tailwind](https://tailwindcss.com/)
+
+
+### Acknowledgements
 - [React-Icons](https://react-icons.github.io/react-icons)
+- [Heroku](https://heroku.com/)
