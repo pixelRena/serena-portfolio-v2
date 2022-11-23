@@ -6,7 +6,7 @@ export default function About() {
 		<div className="absolute m-auto top-0 left-0 right-0 w-11/12 lg:w-10/12 bg-black bg-opacity-40 lg:h-screen" style={{zIndex: "-300"}}>
 		</div>
 		<div className="fade m-auto w-11/12 h-[62rem] lg:h-screen lg:w-10/12">
-		<div className="text-white h-[32rem] grid lg:grid-cols-3 lg:mt-0 lg:h-screen lg:p-32 lg:gap-4 lg:content-center">
+		<div className="text-white mt-32 h-[32rem] grid lg:grid-cols-3 lg:mt-0 lg:h-screen lg:p-32 lg:gap-4 lg:content-center">
 			<div className="col-span-2 w-48 h-48 rounded-full border-8 border-neutral-800 shadow-2xl shadow-black justify-self-center lg:w-96 lg:h-96 lg:col-span-1">
 				<img className="overflow-hidden top-0 left-0 rounded-full" src="https://avatars.githubusercontent.com/u/98000871?v=4"/>
 			</div>
