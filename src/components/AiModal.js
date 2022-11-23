@@ -6,7 +6,7 @@ export default function AiModal({setShowAi, showAi}) {
     return(
         <>
         { showAi && (
-            <div className="absolute ease-in duration-300 bg-black bg-opacity-70 h-screen w-full z-40">
+            <div className="absolute fade bg-black bg-opacity-70 h-screen w-full z-40">
                 <div className="lg:flex justify-center items-center overflow-x-hidden overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none">
                     <div className="relative w-auto my-6 mx-auto max-w-3xl">
                         {/* content */}

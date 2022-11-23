@@ -10,7 +10,7 @@ module.exports = {
       },
       width: {
         '128': '30rem',
-      }
+      },
     },
   },
   plugins: [

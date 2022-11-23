@@ -80,6 +80,19 @@ body {
   animation: flow-inverse 7s linear infinite;
 }
 
+.fade {
+  animation: fade 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes flow {
   0% {
     transform: translate(-50%,-65%) rotate(0deg);

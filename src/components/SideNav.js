@@ -7,7 +7,7 @@ export default function SideNav() {
     return(
         <>
         <div className=" flex">  
-            <aside className="absolute w-48 overflow-hidden z-50">
+            <aside className="absolute w-48 overflow-hidden z-30">
                 <button className={`mt-5 lg:hidden ${active ? 'absolute active' : 'inactive mr-16'}`} id="navbar-toggler" onClick={() => setActive(!active)} type="button">
                     <span></span>
                     <span></span>
