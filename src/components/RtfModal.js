@@ -1,6 +1,6 @@
 import { DiReact, DiSass, DiGithubFull, DiBootstrap } from "react-icons/di";
 import { BsBoxArrowInRight, BsXLg } from 'react-icons/bs';
-import { FaAws } from 'react-icons/fa';
+import { FaAws, FaFigma } from 'react-icons/fa';
 import CarouselBox from "./CarouselBox";
 
 export default function RtfModal({setShowRtf, showRtf}) {
@@ -28,6 +28,7 @@ export default function RtfModal({setShowRtf, showRtf}) {
                                     <DiBootstrap size="2em" className="inline text-purple-500" title="bootstrap 5" />
                                     <DiSass size="2em" className="inline text-pink-500" title="SASS" />
                                     <FaAws size="2em" className="inline text-orange-500" title="AWS" />
+                                    <FaFigma size="2em" className="inline text-pink-500" title="Figma" />
                                 </p>
                                 <p className="text-right text-slate-700 font-medium">
                                     LINKS: <br/>
