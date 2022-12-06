@@ -23,7 +23,7 @@ const responsive = {
 
 const CarouselBox = ({images}) => {
   return( <Carousel className="h-fit" responsive={responsive}>
-    {images.map(i => <img src={`/images/`+i} key={i}/>)}
+    {images.map(i => <img src={`/images/`+i} alt={i} key={i}/>)}
   </Carousel>
   );
 };

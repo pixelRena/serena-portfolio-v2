@@ -31,8 +31,8 @@ export default function RtfModal({setShowRtf, showRtf}) {
                                 </p>
                                 <p className="text-right text-slate-700 font-medium">
                                     LINKS: <br/>
-                                    <a href="https://github.com/pixelRena/rt-fitness" target="_blank"><DiGithubFull size="2.8em" className="mr-2 border-b-2 border-neutral-500 inline cursor-pointer" title="View Code"/></a>
-                                    <a href="https://rtf-prototype.onrender.com" target="_blank"><BsBoxArrowInRight size="1.8em" className="text-sky-500 inline cursor-pointer" title="View Website"/></a>
+                                    <a href="https://github.com/pixelRena/rt-fitness" target="_blank" rel="noreferrer"><DiGithubFull size="2.8em" className="mr-2 border-b-2 border-neutral-500 inline cursor-pointer" title="View Code"/></a>
+                                    <a href="https://rtf-prototype.onrender.com" target="_blank" rel="noreferrer"><BsBoxArrowInRight size="1.8em" className="text-sky-500 inline cursor-pointer" title="View Website"/></a>
                                 </p>
                             </div>
                         </div>

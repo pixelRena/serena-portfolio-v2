@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import { AiOutlineHome, AiOutlineProject, AiOutlineAliwangwang, AiOutlineUser } from 'react-icons/ai';
 
 export default function SideNav() {
     const [ active, setActive ] = useState(false);
@@ -17,22 +18,22 @@ export default function SideNav() {
                     <ul className="space-y-2">
                         <li>
                             <NavLink to="/" className="flex items-center" onClick={() => setActive(false)}>
-                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Home</span>
+                            <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300 "><AiOutlineHome className="inline mr-2"/>Home</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/about" className="flex items-center" onClick={() => setActive(false)}>
-                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">About</span>
+                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300"><AiOutlineUser className="inline mr-2"/>About</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/creations" className="flex items-center" onClick={() => setActive(false)}>
-                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">My Work</span>
+                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300"><AiOutlineProject className="inline mr-2"/>My Work</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/contact" className="flex items-center" onClick={() => setActive(false)}>
-                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300">Contact</span>
+                                <span className="mr-2 cursor-pointer hover:text-sky-300 border-b-transparent border-b-2 hover:border-b-sky-300"><AiOutlineAliwangwang className="inline mr-2"/>Contact</span>
                             </NavLink>
                         </li>
                     </ul>

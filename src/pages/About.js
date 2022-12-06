@@ -8,7 +8,7 @@ export default function About() {
 		<div className="fade m-auto w-11/12 h-[62rem] lg:h-screen lg:w-10/12">
 		<div className="text-white mt-32 h-[32rem] grid lg:grid-cols-3 lg:mt-0 lg:h-screen lg:p-32 lg:gap-4 lg:content-center">
 			<div className="col-span-2 w-48 h-48 rounded-full border-8 border-neutral-800 shadow-2xl shadow-black justify-self-center lg:w-96 lg:h-96 lg:col-span-1">
-				<img className="overflow-hidden top-0 left-0 rounded-full" src="https://avatars.githubusercontent.com/u/98000871?v=4"/>
+				<img className="overflow-hidden top-0 left-0 rounded-full" alt="avatar" src="https://avatars.githubusercontent.com/u/98000871?v=4"/>
 			</div>
 			<div className="col-span-2 mt-5">
 				<h1 className="text-2xl font-semibold lg:text-6xl"><span className="text-sky-500">Serena</span> Dean</h1>

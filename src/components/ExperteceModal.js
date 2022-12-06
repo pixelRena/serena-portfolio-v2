@@ -31,7 +31,7 @@ export default function ExperteceModal({setShowExpertece, showExpertece}) {
                                 </p>
                                 <p className="text-right text-slate-700 font-medium">
                                     LINKS: <br/>
-                                    <a href="http://expertece-prototype.herokuapp.com/" target="_blank"><BsBoxArrowInRight size="1.8em" className="text-sky-500 inline cursor-pointer" title="View Website"/></a>
+                                    <a href="http://expertece-prototype.herokuapp.com/" target="_blank" rel="noreferrer"><BsBoxArrowInRight size="1.8em" className="text-sky-500 inline cursor-pointer" title="View Website"/></a>
                                 </p>
                             </div>
                         </div>
