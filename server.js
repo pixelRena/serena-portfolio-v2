@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
 const aws = require("aws-sdk");
+const http = require("http");
 dotenv.config()
 
 const app = express()
@@ -12,6 +13,10 @@ const ses = new aws.SES({region:"us-east-1"})
 
 app.use(express.static(buildPath))
 app.use(express.json())
+
+setInterval(function() {
+  http.get("http://serenadean.herokuapp.com")
+}, 300000);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'))
