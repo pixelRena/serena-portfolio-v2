@@ -14,9 +14,9 @@ const ses = new aws.SES({region:"us-east-1"})
 app.use(express.static(buildPath))
 app.use(express.json())
 
-// setInterval(function() {
-//   http.get("http://serenadean.herokuapp.com")
-// }, 300000);
+setInterval(function() {
+  http.get("https://devserena.onrender.com/")
+}, 300000);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(buildPath, 'index.html'))
