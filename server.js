@@ -15,7 +15,7 @@ app.use(express.static(buildPath))
 app.use(express.json())
 
 setInterval(function() {
-  http.get("https://devserena.onrender.com/")
+  http.get("http://devserena.onrender.com/")
 }, 300000);
 
 app.get('*', (req, res) => {
