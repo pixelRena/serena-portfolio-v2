@@ -5,7 +5,7 @@ export default function Home() {
                     <div className="circle-wave absolute top-0 left-0 w-full h-full bg-sky-500 rounded-full overflow-hidden border-4 border-sky-500"></div>
                 </div>
                 <div className="absolute text-5xl mix-blend-overlay md:text-5xl lg:text-8xl">devXserena</div> */}
-                <p>Welcome! Bienviendo! <br/>I'm Serena. <br/>Feel free to take a look around</p>
+                <p>Welcome! Bienviendo! <br/>I'm Serena. <br/>Feel free to take a look around and explore.</p>
         </div>
     )
 };
