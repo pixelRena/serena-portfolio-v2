@@ -22,6 +22,7 @@ export default function AiModal({setShowAi, showAi}) {
                             <div className="relative p-5">
                                 <CarouselBox images={["ai2.png", "ai1.png", "ai3.png"]}/>
                                 <p className="my-4 text-left text-slate-700 text-md leading-relaxed font-medium">Want to know how many people were in that picture you took at the party? This application, built with ReactJS and created taking the ZTM Academy course, allows you to copy your image URL's and upload them to see the works or technology and what it can do! It captures multiple faces. Integrated with PSQL, requiring the user to register in order to scan images.</p>
+                                <p className="font-bold text-yellow-600">Since HerokuApp has moved their free dynos, you will be unable to log in to test the face AI. This Application is currently being transferred over and will have an updated link soon.</p>
                                 <p className="text-left text-slate-700 font-medium">TOOLS USED: <br/>
                                     <DiReact size="2em" className="inline text-sky-500" title="reactjs"/>
                                     <DiCss3 size="2em" className="inline text-blue-500" title="CSS" />

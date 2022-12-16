@@ -7,14 +7,14 @@ export default function SideNav() {
 
     return(
         <>
-        <div className=" flex">  
+        <div className="flex">  
             <aside className="absolute w-48 overflow-hidden z-30">
-                <button className={`mt-5 lg:hidden ${active ? 'absolute active' : 'inactive mr-16'}`} id="navbar-toggler" onClick={() => setActive(!active)} type="button">
+                <button className={`mt-5 ${active ? 'absolute active' : 'inactive mr-32 lg:mr-16'}`} id="navbar-toggler" onClick={() => setActive(!active)} type="button">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <div className={`h-screen lg:flex top-0 text-left text-2xl items-center justify-center text-white flex bg-[#0E0E0E] ${active ? '':'hidden'}`}>
+                <div className={`h-screen top-0 text-left text-2xl items-center justify-center text-white flex bg-[#0E0E0E] ${active ? '':'hidden'}`}>
                     <ul className="space-y-2">
                         <li>
                             <NavLink to="/" className="flex items-center" onClick={() => setActive(false)}>
