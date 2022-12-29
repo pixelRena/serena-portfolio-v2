@@ -1,4 +1,4 @@
-import { DiReact, DiNodejsSmall, DiBootstrap, DiCss3, DiMongodb } from "react-icons/di";
+import { DiReact, DiNodejsSmall, DiGithubFull, DiBootstrap, DiCss3, DiMongodb } from "react-icons/di";
 import { BsBoxArrowInRight, BsXLg } from 'react-icons/bs';
 import CarouselBox from "./CarouselBox";
 
@@ -31,6 +31,7 @@ export default function ExperteceModal({setShowExpertece, showExpertece}) {
                                 </p>
                                 <p className="text-right text-slate-700 font-medium">
                                     LINKS: <br/>
+                                    <a href="https://github.com/pixelRena/expertece-prototype" target="_blank" rel="noreferrer"><DiGithubFull size="2.8em" className="mr-2 border-b-2 border-neutral-500 inline cursor-pointer" title="View Code"/></a>
                                     <a href="http://expertece-prototype.herokuapp.com/" target="_blank" rel="noreferrer"><BsBoxArrowInRight size="1.8em" className="text-sky-500 inline cursor-pointer" title="View Website"/></a>
                                 </p>
                             </div>
