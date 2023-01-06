@@ -4,12 +4,14 @@ import ExperteceModal from '../components/ExperteceModal';
 import RtfModal from '../components/RtfModal';
 import AiModal from '../components/AiModal';
 import TravelModal from '../components/TravelModal';
+import RecommendModal from '../components/RecommendModal';
 
 export default function Work() {
 	const [ showExpertece, setShowExpertece ] = useState(false);
 	const [ showRtf, setShowRtf ] = useState(false);
 	const [ showAi, setShowAi ] = useState(false);
 	const [ showTravel, setShowTravel ] = useState(false);
+	const [ showRecommend, setShowRecommend ] = useState(false);
 
 	return(
 		<>
@@ -18,6 +20,7 @@ export default function Work() {
 		<RtfModal showRtf={showRtf} setShowRtf={setShowRtf}/>
 		<AiModal showAi={showAi} setShowAi={setShowAi}/>
 		<TravelModal showTravel={showTravel} setShowTravel={setShowTravel}/>
+		<RecommendModal showRecommend={showRecommend} setShowRecommend={setShowRecommend}/>
 
 		<div className="absolute m-auto top-0 left-0 right-0 w-11/12 lg:w-10/12 bg-black bg-opacity-40 lg:h-screen" style={{zIndex: "-300"}}>
 		</div>
@@ -30,9 +33,9 @@ export default function Work() {
 							<span className="text-lg cursor-pointer block hover:underline hover:text-white" onClick={() => setShowExpertece(true)}>Learn More <FeatherIcon className="inline text-center" icon="arrow-right"/></span>
 						</div>
 					</div>
-					<div className="relative bg-neutral-900 p-20 bg-cover bg-no-repeat bg-center overflow-hidden border-4 rounded-md shadow-lg shadow-black lg:p-40 lg:border-8" style={{backgroundImage: "url('images/aiBrain.jpg')"}}>
-						<div className="absolute text-xl font-bold top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-black drop-shadow-lg hover:bg-opacity-40 hover:text-sky-300 ease-in duration-300 p-40 lg:text-4xl">FACE ANALYZER
-							<span className="text-lg cursor-pointer block hover:underline hover:text-white" onClick={() => setShowAi(true)}>Learn More <FeatherIcon className="inline text-center" icon="arrow-right"/></span>
+					<div className="relative bg-neutral-900 p-20 bg-cover bg-no-repeat bg-center overflow-hidden border-4 rounded-md shadow-lg shadow-black lg:p-40 lg:border-8" style={{backgroundImage: "url('images/cube.gif')"}}>
+						<div className="absolute text-xl font-bold top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:bg-purple-700 drop-shadow-lg hover:bg-opacity-40 hover:text-purple-300 ease-in duration-300 p-40 lg:text-4xl">Gaming Recommendations
+							<span className="text-lg cursor-pointer block hover:underline hover:text-white" onClick={() => setShowRecommend(true)}>Learn More <FeatherIcon className="inline text-center" icon="arrow-right"/></span>
 						</div>
 					</div>
 				</div>
